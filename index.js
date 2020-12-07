@@ -13,7 +13,7 @@ function reduce(src, fnct, start){
     let arr = (!!start) ? start : src[0];
     let i = (!!start) ? 0 : 1 
 
-    for (let i=0; i < src.length; i++){
+    for (; i < src.length; i++){
         arr = fnct(src[i], arr)
     }
     return arr;
